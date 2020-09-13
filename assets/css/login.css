@@ -1,0 +1,53 @@
+/** @format */
+
+body {
+	background: url(../images/login_bg.jpg) no-repeat;
+	background-size: cover;
+}
+
+.log_box {
+	margin-top: 20px;
+}
+
+/* 登录大盒子 */
+.loginAndReg_box {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 400px;
+	height: 310px;
+	padding: 0 35px;
+	background-color: #fff;
+}
+
+/* 登录title */
+.title {
+	height: 60px;
+	text-align: center;
+	line-height: 60px;
+}
+
+.links {
+	text-align: right;
+}
+
+.layui-form-item {
+	position: relative;
+}
+
+.layui-icon {
+	position: absolute;
+	top: 50%;
+	left: 10px;
+	transform: translateY(-50%);
+}
+
+.layui-input {
+	padding-left: 30px;
+}
+
+/* 注册界面样式 */
+.reg_box {
+	display: none;
+}
