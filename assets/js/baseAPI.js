@@ -2,5 +2,10 @@
 // 先调用此函数，拼接真正的url地址
 $.ajaxPrefilter(function (options) {
   options.url = 'http://ajax.frontend.itheima.net' + options.url;
-  console.log(options.url);
+  // console.log(options.url);
+  if (options.url.includes('/my')) {
+    options.headers = {
+      Authorization: localStorage.getItem('token') || ''
+    }
+  }
 });

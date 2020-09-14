@@ -1,0 +1,46 @@
+/** @format */
+
+iframe {
+	width: 100%;
+	height: 100%;
+}
+
+.layui-body {
+	overflow: hidden;
+}
+
+.iconfont {
+	margin-right: 8px;
+}
+
+.layui-icon {
+	margin-right: 8px;
+	margin-left: 20px;
+}
+
+div.infoImg {
+	user-select: none;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	border-bottom: 1px solid #23262e;
+}
+
+.infoImg img {
+	width: 40px;
+	height: 40px;
+}
+
+.text_avatar {
+	display: inline-block;
+	vertical-align: middle;
+	width: 40px;
+	height: 40px;
+	margin-right: 10px;
+	color: #fff;
+	font-size: 20px;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	background-color: #009688;
+}
