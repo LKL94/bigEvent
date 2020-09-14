@@ -24,8 +24,7 @@ body {
 /* 登录title */
 .title {
 	height: 60px;
-	text-align: center;
-	line-height: 60px;
+	background: url(../images/login_title.png) no-repeat center;
 }
 
 .links {
@@ -36,7 +35,7 @@ body {
 	position: relative;
 }
 
-.layui-icon {
+.layui-form-item .layui-icon {
 	position: absolute;
 	top: 50%;
 	left: 10px;
