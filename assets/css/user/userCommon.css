@@ -1,0 +1,14 @@
+/** @format */
+
+body {
+	background-color: #f2f3f5;
+	padding: 15px;
+}
+
+.layui-form {
+	width: 500px;
+}
+
+.layui-form-label {
+	width: 100px;
+}

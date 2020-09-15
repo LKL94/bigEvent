@@ -44,3 +44,7 @@ div.infoImg {
 	border-radius: 50%;
 	background-color: #009688;
 }
+
+.layui-footer {
+	text-align: center;
+}

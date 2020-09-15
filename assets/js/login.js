@@ -81,7 +81,7 @@ $(function () {
         layer.msg('登陆成功');
         // 把服务器返回来的身份验证标识保存到本地存储
         localStorage.setItem('token', res.token);
-        location.href = 'http://127.0.0.1:5500/%E5%A4%A7%E4%BA%8B%E4%BB%B6%E9%A1%B9%E7%9B%AE%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99/study/index.html';
+        location.href = '/bigEvent/study/index.html';
       }
     });
   });
