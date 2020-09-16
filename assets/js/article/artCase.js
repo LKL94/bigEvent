@@ -64,9 +64,9 @@ $(function () {
           }
           getArticleList();
           layer.msg('删除分类成功！');
-          layer.close(index);
         }
       });
+      layer.close(index);
     });
   });
 
