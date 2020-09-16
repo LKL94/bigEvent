@@ -10,7 +10,7 @@ $(function () {
       /^[\S]{6,12}$/, '密码必须6到12位，且不能出现空格'
     ],
     // 定义确认密码校验规则
-    resetPwd: function (val) {
+    reNewPwd: function (val) {
       if ($('.layui-form .newPwd').val() !== val) {
         return '两次密码不一致';
       }
