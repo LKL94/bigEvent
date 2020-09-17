@@ -81,11 +81,11 @@ $(function () {
     let day = new Date(data),
       y = day.getFullYear(),
       m = (day.getMonth() + 1) < 10 ? '0' + (day.getMonth() + 1) : (day.getMonth() + 1),
-      r = day.getDate() < 10 ? '0' + day.getDate() : day.getDate(),
+      d = day.getDate() < 10 ? '0' + day.getDate() : day.getDate(),
       hh = day.getHours() < 10 ? '0' + day.getHours() : day.getHours(),
       mm = day.getMinutes() < 10 ? '0' + day.getMinutes() : day.getMinutes(),
       ss = day.getSeconds() < 10 ? '0' + day.getSeconds() : day.getSeconds();
-    return `${y}-${m}-${r} ${hh}:${mm}:${ss}`;
+    return `${y}-${m}-${d} ${hh}:${mm}:${ss}`;
   }
 
   // 点击筛选，根据下拉菜单所选类别，为参数项赋值，重新渲染数据

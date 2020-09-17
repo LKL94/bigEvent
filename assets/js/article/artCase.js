@@ -2,8 +2,8 @@ $(function () {
   let layer = layui.layer;
   let form = layui.form;
   // layui layer.open()方法的返回值，用来关闭open弹出层
-  let layerIndexDel = null;
-  let layerIndexEdit = null;
+  // let layerIndexDel = null;
+  // let layerIndexEdit = null;
 
   // 发请求获取文章列表
   function getArticleList() {
@@ -22,7 +22,7 @@ $(function () {
 
   // 添加文章类别弹出层
   $('#addArtCase').on('click', function () {
-    layerIndexDel = layer.open({
+    layer.open({
       type: 1,
       title: '添加文章类别',
       area: ['500px', '240px'],
@@ -44,7 +44,7 @@ $(function () {
         }
         getArticleList();
         layer.msg('添加类别成功！');
-        layer.close(layerIndexDel);
+        layer.closeAll();
       }
     });
   });
@@ -75,7 +75,7 @@ $(function () {
     let id = $(this).attr('data-id');
     // console.log(id);
     // 添加弹出层
-    layerIndexEdit = layer.open({
+    layer.open({
       type: 1,
       title: '修改文章类别',
       area: ['500px', '240px'],
@@ -105,7 +105,7 @@ $(function () {
           return layer.msg('修改文章类别失败！');
         }
         layer.msg('修改文章类别成功！');
-        layer.close(layerIndexEdit);
+        layer.closeAll();
         getArticleList();
       }
     });
