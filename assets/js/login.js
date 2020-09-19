@@ -52,7 +52,7 @@ $(function () {
       success(res) {
         // 如果未注册成功，就给用户提示返回来的信息
         if (res.status !== 0) {
-          return layer.msg(res.message);
+          return layer.msg('注册成功！');
         } else {
           layer.msg('注册成功，去登陆');
           $('#link_login').click();

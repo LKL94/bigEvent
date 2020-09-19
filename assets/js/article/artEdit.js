@@ -31,7 +31,7 @@ $(function () {
   };
 
   // // 3. 初始化裁剪区域
-  // $image.cropper(options);
+  $image.cropper(options);
 
 
   // 模拟文件上传事件
@@ -51,13 +51,13 @@ $(function () {
     // 把文件转换为URL地址
     var newImgURL = URL.createObjectURL(img);
     // console.log(newImgURL);
-    $('#image').cropper('destroy')      // 销毁旧的裁剪区域
+    $image.cropper('destroy')      // 销毁旧的裁剪区域
       .attr('src', newImgURL)  // 重新设置图片路径
       .cropper(options);      // 重新初始化裁剪区域
   });
 
   // 获取要编辑的文章id
-  let id = location.search.substring(1);
+  let id = location.search.split('=')[1];
   // console.log(id);
   function fillForm() {
     $.ajax({

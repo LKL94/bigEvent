@@ -49,7 +49,7 @@
           <div class="layui-input-block cover-box">
             <!-- 左侧裁剪区域 -->
             <div class="cover-left">
-              <img id="image" src="/bigEvent/study/assets/images/sample2.jpg" alt="" />
+              <img id="image" src="/bigEvent/study/assets/images/sample2.jpg" />
             </div>
             <!-- 右侧预览区域和选择封面区域 -->
             <div class="cover-right">
@@ -74,7 +74,7 @@
   </div>
   <!--获取文章分类列表下拉菜单模板 -->
   <script type="text/html" id="art_cate">
-    <option value="">请选择文章类别</option>
+    <option value="0">请选择文章类别</option>
     {{each data}}
     <option value="{{$value.Id}}">{{$value.name}}</option>
     {{/each}}

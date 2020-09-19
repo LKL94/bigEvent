@@ -132,4 +132,8 @@ $(function () {
       layer.close(index);
     });
   });
+
+  $('body').on('click', '.btnEdit', function () {
+    location.href = '/bigEvent/study/article/artEdit.html?id=' + $(this).attr('data-id');
+  });
 })
